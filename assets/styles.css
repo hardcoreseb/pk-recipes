@@ -3,4 +3,5 @@
 @import url("./atoms/fonts.css");
 @import url("./molecules/header.css");
 @import url("./molecules/recipe-card.css");
+@import url("./molecules/recipe.css");
 @import url("./organisms/recipe-list.css");

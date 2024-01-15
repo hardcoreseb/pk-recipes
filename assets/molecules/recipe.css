@@ -1,0 +1,19 @@
+.quick-info {
+    border: 1px solid darkgray;
+    border-top: 6px solid coral;
+    border-radius: 5px;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+}
+
+.ingredients {
+    width: 90%;
+}
+
+.ingredients-hl {
+    align-self: flex-start;
+}

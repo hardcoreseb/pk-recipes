@@ -19,9 +19,7 @@
     transform: scale(1.01);
 }
 
-.rec-name-tag,
-.topic-name-tag,
-.time-tag {
+.name-tag {
     color: var(--dark-gray);
     font-size: 0.7rem;
     margin-right: .3rem;
