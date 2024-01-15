@@ -1,0 +1,35 @@
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--light-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+
+
+/* .rec-list {
+    background-color: var(--peach-bg);
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+    width: 80%;
+    padding: 1.5rem 1rem;
+    transition: .3s;
+}
+
+.rec-list:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px var(--peach-bg);
+    transform: scale(1.01);
+} */

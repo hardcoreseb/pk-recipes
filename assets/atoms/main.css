@@ -1,0 +1,15 @@
+:root {
+    --nori-green: rgb(18, 43, 19, 0.4);
+    --sushi-dark: #061113;
+    --light-color: #F8F8FF;
+    --light-green: #415556;
+    --sushi-orange: rgb(235, 27, 0, 0.6);
+    --light-bg: #FEF1E5;
+    --peach-bg: #FDD8C7;
+    --light-gray: #d6d6d6;
+    --dark-gray: #797979;
+}
+
+.no-decoration {
+    text-decoration: none;
+}

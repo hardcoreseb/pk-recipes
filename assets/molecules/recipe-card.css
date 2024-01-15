@@ -1,0 +1,32 @@
+.list-anchor {
+    color: black;
+    background-color: var(--peach-bg);
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+    
+    width: 80%;
+    padding: 1.5rem 1rem;
+    transition: .3s;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-anchor:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px var(--peach-bg);
+    transform: scale(1.01);
+}
+
+.rec-name-tag,
+.topic-name-tag,
+.time-tag {
+    color: var(--dark-gray);
+    font-size: 0.7rem;
+    margin-right: .3rem;
+}
+
+.recipe-name {
+    gap: 10px;
+}
