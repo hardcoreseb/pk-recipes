@@ -12,8 +12,8 @@
 }
 
 
-.guacamole {
-    width: 18rem;
+#guacamole {
+    max-width: 18rem;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -101,7 +101,20 @@
 .steps-list li {
     list-style: none;
     counter-increment: item;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    transition: .3s;
+    color: black;
+    text-decoration: none;
+}
+
+.steps-list .checked {
+    color: #C3C8DE;
+    text-decoration: line-through;
+}
+
+.steps-list li:hover {
+    transform: scale(1.01);
+    cursor: pointer;
 }
 
 .steps-list li::before {
@@ -117,8 +130,9 @@
 }
 
 #holy-guac {
-    width: 18rem;
-    border-radius: 5px;
+    max-width: 16rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
 }
 
 .nutrition-col-wrapper {

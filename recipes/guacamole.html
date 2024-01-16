@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../assets/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent Marker">
     <link rel="shortcut icon" href="../assets/icons/sushicon.ico" type="image/x-icon">
+    <script src="../assets/molecules/steps-color-change.script.js"></script>
     <title>PK Recipes - Guacamole</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
     <main>
         <h2 class="recipe-hl">Guacamole</h2>
         <figure class="top-img-container">
-            <img class="guacamole" src="../assets/images/guacamole.webp" alt="Bowl full of guacamole">
+            <img id="guacamole" src="../assets/images/guacamole.webp" alt="Bowl full of guacamole">
         </figure>
         <section class="quick-info">
             <div class="servings"><span class="name-tag">Servings: </span><span>12</span></div>
@@ -39,19 +40,23 @@
             <h2 class="steps-hl">Steps</h2>
             <ol class="steps-list">
                 <li>
-                    Place minced peppers, 1/4 cup of the chopped cilantro, 
-                    and the diced onions on a cutting board. Chop them together 
-                    into very small pieces. Sprinkle with kosher salt. 
-                    Using the flat side of the knife blade, smear the mixture 
-                    to work it into a paste, and chop again to achieve as fine a texture as possible.
+                    <span onclick="changeColor(this)">
+                        Place minced peppers, 1/4 cup of the chopped cilantro,
+                        and the diced onions on a cutting board. Chop them together
+                        into very small pieces. Sprinkle with kosher salt.
+                        Using the flat side of the knife blade, smear the mixture
+                        to work it into a paste, and chop again to achieve as fine a texture as possible.
+                    </span>
                 </li>
                 <li>
-                    Stem, halve, and pit the avocados. 
-                    Scoop out flesh and place in a bowl. 
-                    Add 1/4 cup chopped cilantro, onion and serrano mixture, 
-                    salt, and fresh lime juice. Mash with a potato masher to 
-                    desired texture (smooth or chunky), 5 or 6 minutes. 
-                    Taste and adjust seasonings. If not serving immediately, cover and refrigerate.
+                    <span onclick="changeColor(this)">
+                        Stem, halve, and pit the avocados.
+                        Scoop out flesh and place in a bowl.
+                        Add 1/4 cup chopped cilantro, onion and serrano mixture,
+                        salt, and fresh lime juice. Mash with a potato masher to
+                        desired texture (smooth or chunky), 5 or 6 minutes.
+                        Taste and adjust seasonings. If not serving immediately, cover and refrigerate.
+                    </span>
                 </li>
             </ol>
         </section>
