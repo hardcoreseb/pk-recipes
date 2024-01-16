@@ -3,6 +3,7 @@
     border-top: 6px solid coral;
     border-radius: 5px;
     padding: 1rem;
+    margin: 1.5rem;
 
     display: flex;
     justify-content: space-around;
@@ -10,10 +11,127 @@
     gap: 4rem;
 }
 
+
+.guacamole {
+    width: 18rem;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.top-img-container {
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid #333;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
+}
+
+.top-img-container::before, .top-img-container::after {
+    position: absolute;
+    background: var(--light-bg);
+    z-index: -1;
+    transition: 1s;
+    content: '';
+}
+
+.top-img-container::before {
+    height: 20rem;
+    width: 18rem;
+}
+
+.top-img-container::after {
+    width: 20rem;
+    height: 18rem;
+}    
+
+.top-img-container:hover::before {
+    width: 0px;
+    background: var(--light-bg);
+}
+
+.top-img-container:hover::after {
+    height: 0px;
+    background: var(--light-bg);
+}
+
+.top-img-container:hover {
+    background: var(--light-bg);
+}
+
 .ingredients {
+    margin-bottom: 2rem;
+}
+
+.ingredients,
+.steps {
     width: 90%;
 }
 
-.ingredients-hl {
+.ingredients-hl,
+.steps-hl {
     align-self: flex-start;
+}
+
+.ingredients-list {
+    list-style: none;
+}
+
+.ingredients-list li::before {
+    content: "\2022";
+    color: coral;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+}
+
+.steps-list {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.steps-list li {
+    list-style: none;
+    counter-increment: item;
+    padding-bottom: 1rem;
+}
+
+.steps-list li::before {
+    content: counter(item);
+    margin-right: 5px;
+    margin-left: -2rem;
+    font-size: 80%;
+    background-color: coral;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+#holy-guac {
+    width: 18rem;
+    border-radius: 5px;
+}
+
+.nutrition-col-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nutrition-row-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
 }

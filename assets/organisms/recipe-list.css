@@ -1,7 +1,5 @@
 main {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 3rem;
+    margin: 3rem 15%;
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: var(--light-bg);
