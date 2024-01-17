@@ -154,6 +154,35 @@
     gap: 2rem;
 }
 
+.source-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-source {
+    display: inline-block;
+    border-radius: 3px;
+    padding: .2em .5em .3em;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: .25em .1em;
+
+    color: #fff;
+    background-image: linear-gradient(90deg,#ff8901,#db1d5f);
+    font-weight: 700;
+
+    transition: .25s ease-out;
+}
+
+.recipe-source:hover {
+    box-shadow: 0 0 3px #ff8901,
+                0 0 6px #db1d5f,
+                0 0 9px #ff8901,
+                0 0 12px #db1d5f;
+    transform: scale(1.05);
+}
+
 @media (max-width: 500px) {
     .top-img-container {
         border: none;
