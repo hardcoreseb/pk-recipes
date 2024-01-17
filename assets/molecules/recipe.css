@@ -121,7 +121,7 @@
     margin-right: 10%;
 }
 
-.steps-list li {
+.steps-list > li {
     list-style: none;
     counter-increment: item;
     margin-bottom: 1rem;
@@ -135,12 +135,12 @@
     text-decoration: line-through;
 }
 
-.steps-list li:hover {
+.steps-list > li:hover {
     transform: scale(1.01);
     cursor: pointer;
 }
 
-.steps-list li::before {
+.steps-list > li::before {
     content: counter(item);
     margin-right: 5px;
     margin-left: -2rem;
@@ -162,6 +162,7 @@
     height: auto;
     border-radius: 50%;
     aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 .nutrition-col-wrapper {
