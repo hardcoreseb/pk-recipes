@@ -12,7 +12,7 @@
 }
 
 
-#guacamole {
+.top-img {
     width: 100%;
     max-width: 18rem;
     -webkit-touch-callout: none;
@@ -69,6 +69,11 @@
     background: var(--light-bg);
 }
 
+#sun-dried-pasta {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
 .ingredients {
     margin-bottom: 2rem;
 }
@@ -83,6 +88,11 @@
     align-self: flex-start;
 }
 
+.ingredients-subhl {
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
 .ingredients-list {
     list-style: none;
 }
@@ -93,6 +103,17 @@
     font-weight: bold;
     display: inline-block; 
     width: 1em;
+}
+
+.recipe-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: coral;
+    transition: .3s ease-out;
+}
+
+.recipe-link:hover {
+    filter: brightness(80%);
 }
 
 .steps-list {
@@ -131,7 +152,11 @@
     border-radius: 3px;
 }
 
-#holy-guac {
+.bot-img-container {
+    margin: 1rem;
+}
+
+.bot-img {
     width: 100%;
     max-width: 16rem;
     height: auto;

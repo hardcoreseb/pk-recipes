@@ -5,18 +5,29 @@
     border-radius: 1rem;
     
     width: 80%;
+    margin-bottom: 1rem;
     padding: 1.5rem 1rem;
-    transition: .3s;
+    transition: .2s ease-in-out;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
 }
 
 .list-anchor:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 5px 2px var(--peach-bg);
+    box-shadow: 0px 0px 3px var(--dark-gray);
     transform: scale(1.01);
+}
+
+.list-anchor div:first-child,
+.list-anchor div:last-child {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.list-anchor div:last-child {
+    white-space: nowrap;
+    text-align: right;
 }
 
 .name-tag {
