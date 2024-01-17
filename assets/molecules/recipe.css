@@ -13,6 +13,7 @@
 
 
 #guacamole {
+    width: 100%;
     max-width: 18rem;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -20,11 +21,12 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin: 2rem;
 }
 
 .top-img-container {
-    width: 20rem;
-    height: 20rem;
+    max-width: 20rem;
+    max-height: 20rem;
     border: 1px solid #333;
     -webkit-tap-highlight-color: transparent;
     display: flex;
@@ -130,7 +132,9 @@
 }
 
 #holy-guac {
+    width: 100%;
     max-width: 16rem;
+    height: auto;
     border-radius: 50%;
     aspect-ratio: 1/1;
 }
@@ -148,4 +152,15 @@
     align-items: center;
     flex-direction: row;
     gap: 2rem;
+}
+
+@media (max-width: 500px) {
+    .top-img-container {
+        border: none;
+    }
+    
+    .top-img-container::after,
+    .top-img-container::before {
+        display: none;
+    }
 }
