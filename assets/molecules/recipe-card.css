@@ -10,7 +10,9 @@
     transition: .2s ease-in-out;
 
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr auto 1fr 24px;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .list-anchor:hover {
@@ -25,7 +27,7 @@
     flex-basis: 0;
 }
 
-.list-anchor div:last-child {
+.list-anchor div:nth-last-child(2) {
     white-space: nowrap;
     text-align: right;
 }
@@ -38,4 +40,16 @@
 
 .recipe-name {
     gap: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.time {
+    align-items: center;
+}
+
+.lang-icon {
+    max-width: 1.5rem;
+    display: inline-block;
+    align-self: center;
 }
