@@ -53,3 +53,14 @@
     display: inline-block;
     align-self: center;
 }
+
+@media screen and (min-width: 576px) {
+    .list-anchor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recipe-name {
+        white-space: wrap;
+    }
+}
