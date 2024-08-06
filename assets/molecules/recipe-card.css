@@ -54,7 +54,7 @@
     align-self: center;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
     .list-anchor {
         display: flex;
         flex-direction: column;
@@ -62,5 +62,10 @@
 
     .recipe-name {
         white-space: wrap;
+    }
+
+    .list-anchor div:nth-last-child(2) {
+        white-space: nowrap;
+        text-align: left;
     }
 }
