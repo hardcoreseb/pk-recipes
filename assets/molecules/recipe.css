@@ -72,7 +72,8 @@
 #sun-dried-pasta,
 #curry-dattel-dip,
 #tteokbokki,
-#honeycomb-tofu {
+#honeycomb-tofu,
+.fit-img {
     aspect-ratio: 1/1;
     object-fit: cover;
 }
