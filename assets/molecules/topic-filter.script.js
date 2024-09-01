@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const recipes = document.querySelectorAll('.list-anchor');
 
     function getScreenSize() {
-        if (window.watchMedia("(max-width: 576px)").matches) {
+        if (window.matchMedia("(max-width: 576px)").matches) {
             return 'flex';
         }
         else {
