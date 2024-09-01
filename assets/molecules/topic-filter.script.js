@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const topicFilter = document.getElementById('topic-filter');
     const recipes = document.querySelectorAll('.list-anchor');
-
+    
+    //Check if website is seen on phone or something bigger (tablet, dekstop)
     function getScreenSize() {
         if (window.matchMedia("(max-width: 576px)").matches) {
             return 'flex';
