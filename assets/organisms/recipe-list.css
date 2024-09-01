@@ -15,11 +15,18 @@ main h2 {
     margin-bottom: 1rem;
 }
 
+.control-elements {
+    background-color: var(--peach-bg);
+    width: 80%;
+    border: 1px var(--medium-gray) solid;
+    border-radius: 5px;
+    padding: 2rem 0;
+    margin: 1rem 0;
+}
+
 .filters {
-    margin-left: 10%;
+    margin-left: 5%;
     margin-right: auto;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 576px) {
