@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent Marker">
     <link rel="shortcut icon" href="./assets/icons/sushicon.ico" type="image/x-icon">
+    <script src="./assets/molecules/topic-filter.script.js"></script>
     <title>PK Recipes</title>
 </head>
 <body>
@@ -15,6 +16,17 @@
         </a>
     </header>
     <main>
+
+        <div class="filters">
+            <label for="topic-filter">Filter by Topic:</label>
+            <select name="topic-filter" id="topic-filter">
+                <option value="All">All</option>
+                <option value="Dinner">Dinner</option>
+                <option value="Snacks">Snacks</option>
+                <option value="Dips">Dips</option>
+            </select>
+        </div>
+
         <h2>All recipes:</h2>
         
         <a class="no-decoration list-anchor" href="./recipes/sun_dried_tomato_pasta.html">
