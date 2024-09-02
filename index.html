@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:title" content="PK Recipes">
+    <meta name="og:description" content="Recipes cooked and approved by PK">
+    <meta name="og:image" content="./assets/images/sushi-chop.jpg">
+    <meta name="og:image:width" content="650">
+    <meta name="og:image:height" content="536">
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent Marker">
     <link rel="shortcut icon" href="./assets/icons/sushicon.ico" type="image/x-icon">
@@ -18,7 +23,7 @@
     <main>
 
         <div class="control-elements">
-            <div class="filters">
+            <div class="topic-filter">
                 <label for="topic-filter">Filter by Topic:</label>
                 <select name="topic-filter" id="topic-filter">
                     <option value="All">All</option>
@@ -27,6 +32,16 @@
                     <option value="Dips">Dips</option>
                 </select>
             </div>
+
+            <div class="sort-filter">
+                <label for="sort-filter">Sort by:</label>
+                <select name="sort-filter" id="sort-filter">
+                    <option value="default">Default</option>
+                    <option value="time">Time</option>
+                    <option value="languague">Language</option>
+                </select>
+            </div>
+
         </div>
 
         <h2>All recipes:</h2>
