@@ -78,13 +78,10 @@
     object-fit: cover;
 }
 
-.ingredients {
-    margin-bottom: 2rem;
-}
-
 .ingredients,
 .steps {
-    width: 90%;
+    width: 65ch;
+    margin-bottom: 3rem;
 }
 
 .ingredients-hl,
