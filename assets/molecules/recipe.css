@@ -80,7 +80,7 @@
 
 .ingredients,
 .steps {
-    width: 65ch;
+    max-width: 65ch;
     margin-bottom: 3rem;
 }
 
